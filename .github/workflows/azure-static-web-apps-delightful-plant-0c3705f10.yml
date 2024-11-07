@@ -14,9 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Set Environment Variables for Build
 
-    steps:
-      - name: Set REACT_APP_OKTA_CLIENT_ID from GitHub Secrets
-        run: echo "REACT_APP_OKTA_CLIENT_ID=${{ secrets.REACT_APP_OKTA_CLIENT_ID }}" >> $GITHUB_ENV
+    # steps:
+    #   - name: Set REACT_APP_OKTA_CLIENT_ID from GitHub Secrets
+    #     run: echo "REACT_APP_OKTA_CLIENT_ID=${{ secrets.REACT_APP_OKTA_CLIENT_ID }}" >> $GITHUB_ENV
     env:
       REACT_APP_OKTA_CLIENT_ID: ${{ secrets.REACT_APP_OKTA_CLIENT_ID }}
       REACT_APP_OKTA_ISSUER: ${{ secrets.REACT_APP_OKTA_ISSUER }}
