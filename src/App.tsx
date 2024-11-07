@@ -3,7 +3,9 @@ import "./App.css";
 import { Counter } from "./features/counter/counter";
 
 function App() {
-  return <Counter></Counter>;
+  console.log(process.env);
+
+  return <Counter />;
 }
 
 export default App;

@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "baseUrl": "./",
+    "paths": {
+      "@fuse/*": ["./src/@fuse/*"],
+      "@history*": ["./src/@history"],
+      "@lodash": ["./src/@lodash"],
+      "@mock-api": ["./src/@mock-api"],
+      "app/store/*": ["./src/app/store/*"],
+      "app/shared-components/*": ["./src/app/shared-components/*"],
+      "app/configs/*": ["./src/app/configs/*"],
+      "app/theme-layouts/*": ["./src/app/theme-layouts/*"],
+      "app/AppContext": ["./src/app/AppContext"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": [
+    "node_modules",
+    "src/@*/**",
+    "src/i18n.js",
+    "src/reportWebVitals.js",
+    "src/serviceWorker.js",
+    "src/app/auth/**",
+    "src/app/configs/**",
+    "src/app/main/**"
+  ]
+}

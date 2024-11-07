@@ -4,7 +4,7 @@ import { decrement, increment, incrementByAmount } from "./counterSlice";
 // import styles from "./Counter.module.css";
 
 export function Counter() {
-  const count = useSelector((state) => state.counter.value);
+  const count = useSelector((state : any) => state.counter.value);
   const dispatch = useDispatch();
 
   return (
