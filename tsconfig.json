@@ -32,6 +32,7 @@
     "src/serviceWorker.js",
     "src/app/auth/**",
     "src/app/configs/**",
-    "src/app/main/**"
+    "src/app/main/**",
+    "build"
   ]
 }
