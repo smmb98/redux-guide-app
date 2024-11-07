@@ -25,9 +25,7 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-    env:
-      REACT_APP_OKTA_CLIENT_ID: ${{ secrets.REACT_APP_OKTA_CLIENT_ID }}
-      REACT_APP_OKTA_ISSUER: ${{ secrets.REACT_APP_OKTA_ISSUER }}
+
 
     steps:
       - uses: actions/checkout@v3
