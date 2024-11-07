@@ -130,7 +130,7 @@
   },
   "scripts": {
     "start": "set PORT=3000 && react-app-rewired  start",
-  "build": "CI=false cross-env REACT_APP_OKTA_CLIENT_ID=${REACT_APP_OKTA_CLIENT_ID} GENERATE_SOURCEMAP=false react-app-rewired build",
+    "build": "CI=false cross-env REACT_APP_OKTA_CLIENT_ID=${REACT_APP_OKTA_CLIENT_ID} GENERATE_SOURCEMAP=false react-app-rewired build",
     "build:development": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build",
     "test": "react-app-rewired test --env=node",
     "eject": "react-app-rewired eject",
